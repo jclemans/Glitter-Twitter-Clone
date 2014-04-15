@@ -1,0 +1,9 @@
+
+development:
+  adapter: postgresql
+  database: glitter_development
+
+test:
+  adapter: postgresql
+  database: glitter_test
+

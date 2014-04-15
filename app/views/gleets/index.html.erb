@@ -1,0 +1,7 @@
+<h1>Recent Gleets</h1>
+
+<div class="display_all_gleets">
+  <ul><% @gleets.each do |gleet| %>
+    <li><%= gleet.user.handle %> says:<em> <%= gleet.content %> </em></li>
+  </ul><% end %>
+</div>
