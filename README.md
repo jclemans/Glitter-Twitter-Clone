@@ -7,15 +7,12 @@ Summary
 This project is our first attempt at using action mailer to send automated email messages from a Ruby on Rails app.
 
 Completed:
-* Nothing yet!
-
-User Stories to do:
 
 * As a user, I want to be able to sign up so I have a glitter account that I can use to share stuff with my peeps.
-
 * As a user, I want to receive an automatic welcome email so that I can confirm my account was created
-
 * As a user, I want to be able to sign in with a username and password so that I can post content.
+
+User Stories to do:
 
 * As a user, I want to be able to follow other users so I can see their content automatically.
 
