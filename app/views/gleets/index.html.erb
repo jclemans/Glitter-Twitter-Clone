@@ -2,6 +2,7 @@
 
 <div class="display_all_gleets">
   <ul><% @gleets.each do |gleet| %>
-    <li><%= gleet.user.handle %> says:<em> <%= gleet.content %> </em></li>
-  </ul><% end %>
+    <li><%= gleet.user.handle %> says:<em> <%= link_to gleet.content, gleet_path(gleet) %> </em></li>
+  <% end %>
+  </ul>
 </div>

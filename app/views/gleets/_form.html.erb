@@ -1,0 +1,8 @@
+<%= form_for @gleet do |f| %>
+  <div class="form-group">
+    <%= f.label :content, "Gleet" %>
+    <%= f.text_area :content %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+  </div>
+  <%= f.submit "Post", :class => "btn btn-primary" %>
+<% end %>
