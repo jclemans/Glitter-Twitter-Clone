@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path, notice: 'Thank you for logging in!'
+      redirect_to root_path, notice: 'Thank you for signing up!'
     else
       render 'new'
     end
