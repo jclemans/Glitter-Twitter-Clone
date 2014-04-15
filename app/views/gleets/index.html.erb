@@ -1,8 +1,13 @@
 <h1>Recent Gleets</h1>
 
+<%= link_to "Post New", new_gleet_path, :class => "btn btn-default", :id => "post_gleet_form", remote: true %>
+
 <div class="display_all_gleets">
-  <ul><% @gleets.each do |gleet| %>
-    <li><%= gleet.user.handle %> says:<em> <%= link_to gleet.content, gleet_path(gleet) %> </em></li>
-  <% end %>
+  <ul id="gleets">
+    <% @gleets.each do |gleet| %>
+    <li>
+      <%= gleet.user.handle %> says:<em> <%= link_to gleet.content, gleet_path(gleet) %> </em>
+    </li>
+    <% end %>
   </ul>
 </div>

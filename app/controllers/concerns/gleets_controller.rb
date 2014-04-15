@@ -9,8 +9,15 @@ class GleetsController < ApplicationController
   end
 
   def create
-    @gleet = Gleet.create(gleet_params)
-    redirect_to root_path
+    @gleet = Gleet.new(gleet_params)
+    if @gleet.save
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
+    else
+      render 'new'
+    end
   end
 
   def show

@@ -1,4 +1,4 @@
-<%= form_for @gleet do |f| %>
+<%= form_for @gleet, remote: true, :html => { :id => "new_gleet" } do |f| %>
   <div class="form-group">
     <%= f.label :content, "Gleet" %>
     <%= f.text_area :content %>
