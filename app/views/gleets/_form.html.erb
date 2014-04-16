@@ -1,8 +1,7 @@
 <%= form_for @gleet, remote: true, :html => { :id => "new_gleet" } do |f| %>
+  <%= f.submit "Post", :class => "btn btn-success" %>
   <div class="form-group">
-    <%= f.label :content, "Gleet" %>
     <%= f.text_area :content %>
     <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
-  <%= f.submit "Post", :class => "btn btn-primary" %>
 <% end %>

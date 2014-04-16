@@ -7,8 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="nav">
-    <%= link_to "Glitter Home", root_path %>
+  <div class="navbar navbar-inverse">
+    <%= link_to "Glitter Home", root_path, :class => "navbar-text" %>
     <div class="signin">
       <% if current_user %>
         <%= link_to "Log Out", logout_path,  :class => "navbar-text pull-right"  %>
@@ -18,9 +18,9 @@
         <%= link_to "Log In", new_session_path, :class => "navbar-text pull-right" %>
       <% end %>
     </div>
-  <div class="container">
   </div>
 
+  <div class="container">
     <%= yield %>
   </div>
 

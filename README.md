@@ -15,19 +15,12 @@ Completed:
 User Stories to do:
 
 * As a user, I want to be able to follow other users so I can see their content automatically.
-
 * As a user, I want to be able to mention other users in my posts so that the mentioned user is alerted to my post.
-
 * As a user, I want to receive an email notification when another user mentions me, so I know when people are talking about me.
-
 * As a user, I want to receive an email notification when another user follows me, so I know who is interested in my content.
-
 * As a user, I want to be able to view all of my followers or all of another users followers.
-
 * As a user, I want to upload photos so I can share my selfies with the world. Because the world needs more selfies.
-
 * As a user, I want to be able to browse through endless page after page of content. AKA pagination.
-
 * As a user, I want to be able to set my notification preferences so I can control what email I get from Glitter.
 
 This document is brought to you by Jeremy and Maigen. Thanks for stopping by. But mostly, stay classy.

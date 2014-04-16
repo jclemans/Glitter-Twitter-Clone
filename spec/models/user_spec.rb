@@ -5,6 +5,7 @@ describe User do
   it { should have_secure_password }
   it { should have_many :gleets }
   it { should have_many :mentions }
+  it { should have_many :followed_users, through: :followed_users}
   it { should validate_uniqueness_of :email }
 
   it 'sends a welcome email' do
